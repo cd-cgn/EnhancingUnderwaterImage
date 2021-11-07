@@ -1,0 +1,6 @@
+final = img
+final[:,:,0] = (np.multiply(W1,img1[:,:,0]) + np.multiply(W2,img2[:,:,0]))
+final[:,:,1] = (np.multiply(W1,img1[:,:,1]) + np.multiply(W2,img2[:,:,1]))
+final[:,:,2] = (np.multiply(W1,img1[:,:,2]) + np.multiply(W2,img2[:,:,2]))
+
+cv.imshow('final',final)
